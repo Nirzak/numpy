@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "23:00"
+  open-pull-requests-limit: 10
+  labels:
+  - 03 - Maintenance
+  commit-message:
+    prefix: MAINT
